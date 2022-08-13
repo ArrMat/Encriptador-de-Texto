@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(155, 155, 219);
+}
+
+.caja {
+    display: flex;
+    flex-direction: row;
+    margin: 20% 10%;
+}
+.mensaje {
+    display: flex;
+    display: inline-block;
+    background-color: aqua;
+    flex-direction: column;
+    width: 50%;
+}
+
+.resultado {
+    display: flex;
+    display: inline-block;
+    background-color: yellow;
+    flex-direction: column;
+    width: 50%;
+}
