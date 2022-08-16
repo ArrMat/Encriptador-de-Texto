@@ -1,24 +1,74 @@
 body {
-    background-color: rgb(155, 155, 219);
+    background: radial-gradient(#ffffff, #5b8b93);
+    min-height: 100vh;
 }
 
 .caja {
     display: flex;
     flex-direction: row;
-    margin: 20% 10%;
+    padding: 5%;
 }
-.mensaje {
-    display: flex;
-    display: inline-block;
-    background-color: aqua;
-    flex-direction: column;
-    width: 50%;
-}
+    .caja section {
+        height: 45em;
+        margin-left: 10%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column
+    }
+    .mensaje {
+        background-color: transparent;
+        width: 50%;
+    }
 
-.resultado {
-    display: flex;
-    display: inline-block;
-    background-color: yellow;
-    flex-direction: column;
-    width: 50%;
+    .resultado {
+        background-color: white;
+        width: 25%;
+        border-radius: 2em;
+    }
+
+textarea, textarea:focus, textarea:active{
+    resize: none;
+    overflow-y: auto;
+    width: 90%;
+    padding: 2em 5%;
+    background-color: transparent;
+    height: 80%;
+    outline: transparent;
+    border: none;
 }
+    #escribe-aqui {
+        color: #393974;
+        font-size: 2em;
+    }
+    .resultado textarea {
+        color: #393974;
+        font-size: 2em;
+    
+    }
+    
+    
+.botones {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+    button {
+        width: 30%;
+        min-width: fit-content;
+        background-color: #393974;
+        color: white;
+        font-size: 1em;
+        padding: 1em 0;
+        margin: 1em;
+        border-radius: 1em;
+        border: 0.1em solid #393974;
+    }
+    #boton-desencriptar {
+        background-color: transparent;
+        color: #393974;
+    }
+    #boton-copiar {
+        width: 80%;
+        color: #393974;
+        background-color: transparent;
+    }

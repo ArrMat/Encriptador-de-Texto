@@ -11,9 +11,8 @@ function encriptar(mensaje) {
     .replace(/a/g, "ai")
     .replace(/o/g, "ober")
     .replace(/u/g, "ufat");
-    console.log(textoEncriptado);
+    return textoEncriptado;
 }
-encriptar("Dialogo boeno");
 
 function desencriptar(mensaje) {
     let texto = mensaje;
@@ -22,7 +21,20 @@ function desencriptar(mensaje) {
     .replace(/ai/g, "a")
     .replace(/imes/g, "i")
     .replace(/enter/g, "e");
-    console.log(textoDesencriptado);
+    return textoDesencriptado;
 }
 
-desencriptar("Dimesailobergober boberenternober")
+let mensaje = document.querySelector(".mensaje textarea");
+let resultado = document.querySelector(".resultado textarea");
+let botonCopiar = document.getElementById("boton-copiar");
+let botonEncriptar = document.getElementById("boton-encriptar");
+let botonDesencriptar = document.getElementById("boton-desencriptar");
+
+botonEncriptar.addEventListener("click",()=>{
+    document.querySelector(".resultado textarea").value = encriptar(mensaje.value);});
+
+botonDesencriptar.addEventListener("click",()=>{
+    document.querySelector(".resultado textarea").value = desencriptar(mensaje.value);
+})
+
+botonCopiar.addEventListener("click", )
