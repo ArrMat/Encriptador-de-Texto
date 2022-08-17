@@ -37,4 +37,8 @@ botonDesencriptar.addEventListener("click",()=>{
     document.querySelector(".resultado textarea").value = desencriptar(mensaje.value);
 })
 
-botonCopiar.addEventListener("click", )
+botonCopiar.addEventListener("click",()=>{
+    resultado.removeAttribute("disabled");
+    navigator.clipboard.writeText(resultado.value);
+    alert("texto copiado");
+} )
