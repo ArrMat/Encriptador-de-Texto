@@ -70,18 +70,23 @@ textarea, textarea:focus, textarea:active{
     button {
         width: 30%;
         min-width: fit-content;
-        background-color: #7614e3;
+        background-color: transparent;
         color: white;
         font-size: 1em;
         padding: 1em 0;
         margin: 1em;
         border-radius: 1em;
         border: 0.1em solid #7614e3;
+        transition: 0.4s;
     }
-    #boton-desencriptar {
-        background-color: transparent;
-    }
+        button:hover {
+            background-color: #7614e3;
+        }
+        button:active {
+            background-color: #4b128c;
+        }
     #boton-copiar {
         width: 80%;
-        background-color: transparent;
     }
+
+
