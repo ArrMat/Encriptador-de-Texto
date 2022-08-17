@@ -1,6 +1,7 @@
 body {
-    background: radial-gradient(#ffffff, #5b8b93);
+    background: url("imagenes\\\wormhole.jpg");
     min-height: 100vh;
+    font-family: 'Karla', sans-serif;
 }
 
 .caja {
@@ -21,7 +22,7 @@ body {
     }
 
     .caja-resultado {
-        background-color: white;
+        background-color: black;
         width: 25%;
         border-radius: 2em;
     }
@@ -38,18 +39,25 @@ textarea, textarea:focus, textarea:active{
     border: none;
 }
     #mensaje {
-        color: #393974;
+        color: white;
         font-size: 2em;
     }
     #resultado {
         display: none;
-        color: #393974;
+        color: white;
         font-size: 2em;
     
     }
+    .imagen p {
+        color: white;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.5em;
+    }
     #img-no-text {
         position: inherit;
-        margin: 10% auto;
+        margin: 45% 10% 0% 10%;
         width: 80%;
     }
     
@@ -62,20 +70,18 @@ textarea, textarea:focus, textarea:active{
     button {
         width: 30%;
         min-width: fit-content;
-        background-color: #393974;
+        background-color: #7614e3;
         color: white;
         font-size: 1em;
         padding: 1em 0;
         margin: 1em;
         border-radius: 1em;
-        border: 0.1em solid #393974;
+        border: 0.1em solid #7614e3;
     }
     #boton-desencriptar {
         background-color: transparent;
-        color: #393974;
     }
     #boton-copiar {
         width: 80%;
-        color: #393974;
         background-color: transparent;
     }

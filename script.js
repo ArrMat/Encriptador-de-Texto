@@ -35,9 +35,9 @@ botonEncriptar.addEventListener("click",()=>{
 
     if (resultado.value === "") {
         document.getElementById("resultado").style.display="none";
-        document.getElementById("img-no-text").style.display="inline-block";
+        document.querySelector(".imagen").style.display="inline-block";
     } else {
-        document.getElementById("img-no-text").style.display="none";
+        document.querySelector(".imagen").style.display="none";
         document.getElementById("resultado").style.display="inline-block";
     }
 });
@@ -47,9 +47,9 @@ botonDesencriptar.addEventListener("click",()=>{
 
     if (resultado.value === "") {
         document.getElementById("resultado").style.display="none";
-        document.getElementById("img-no-text").style.display="inline-block";
+        document.querySelector(".imagen").style.display="inline-block";
     } else {
-        document.getElementById("img-no-text").style.display="none";
+        document.querySelector(".imagen").style.display="none";
         document.getElementById("resultado").style.display="inline-block";
     }
 })

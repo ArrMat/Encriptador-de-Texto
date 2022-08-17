@@ -6,20 +6,24 @@
         <title>Encriptador de Texto</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap">
     </head>
     <body>
         <main>
             <div class="caja">
                 <section class="caja-mensaje">
                     
-                    <textarea placeholder="Escriba aqui" id="mensaje"></textarea>                
+                    <textarea placeholder="Escribe aqui! No uses mayusculas ni caracteres especiales!" id="mensaje"></textarea>                
                     <div class="botones">
                         <button id="boton-encriptar">Encriptar</button>
                         <button id="boton-desencriptar">Desencriptar</button>
                     </div>
                 </section>
                 <section class="caja-resultado">
-                    <img src="imagenes\textnotfound.png" id="img-no-text">
+                    <div class="imagen">
+                        <img src="imagenes\saitama-ok.jpg" id="img-no-text">
+                        <p>Aun no hay texto, escribe el mensaje que quieras encriptar o desencriptar</p>
+                    </div>
                     <textarea readonly id="resultado"></textarea>
                     <div class="botones">
                         <button id="boton-copiar">Copiar al Portapapeles</button>
