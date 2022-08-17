@@ -15,12 +15,12 @@ body {
         justify-content: space-evenly;
         flex-direction: column
     }
-    .mensaje {
+    .caja-mensaje {
         background-color: transparent;
         width: 50%;
     }
 
-    .resultado {
+    .caja-resultado {
         background-color: white;
         width: 25%;
         border-radius: 2em;
@@ -32,25 +32,32 @@ textarea, textarea:focus, textarea:active{
     width: 90%;
     padding: 2em 5%;
     background-color: transparent;
+    border-radius: inherit;
     height: 80%;
     outline: transparent;
     border: none;
 }
-    #escribe-aqui {
+    #mensaje {
         color: #393974;
         font-size: 2em;
     }
-    .resultado textarea {
+    #resultado {
+        display: none;
         color: #393974;
         font-size: 2em;
     
     }
-    
+    #img-no-text {
+        position: inherit;
+        margin: 10% auto;
+        width: 80%;
+    }
     
 .botones {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
+    margin-top: auto;
 }
     button {
         width: 30%;

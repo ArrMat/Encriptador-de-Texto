@@ -24,21 +24,38 @@ function desencriptar(mensaje) {
     return textoDesencriptado;
 }
 
-let mensaje = document.querySelector(".mensaje textarea");
-let resultado = document.querySelector(".resultado textarea");
+let mensaje = document.getElementById("mensaje");
+let resultado = document.getElementById("resultado");
 let botonCopiar = document.getElementById("boton-copiar");
 let botonEncriptar = document.getElementById("boton-encriptar");
 let botonDesencriptar = document.getElementById("boton-desencriptar");
 
 botonEncriptar.addEventListener("click",()=>{
-    document.querySelector(".resultado textarea").value = encriptar(mensaje.value);});
+    document.getElementById("resultado").value = encriptar(mensaje.value);
+
+    if (resultado.value === "") {
+        document.getElementById("resultado").style.display="none";
+        document.getElementById("img-no-text").style.display="inline-block";
+    } else {
+        document.getElementById("img-no-text").style.display="none";
+        document.getElementById("resultado").style.display="inline-block";
+    }
+});
 
 botonDesencriptar.addEventListener("click",()=>{
-    document.querySelector(".resultado textarea").value = desencriptar(mensaje.value);
+    document.getElementById("resultado").value = desencriptar(mensaje.value);
+
+    if (resultado.value === "") {
+        document.getElementById("resultado").style.display="none";
+        document.getElementById("img-no-text").style.display="inline-block";
+    } else {
+        document.getElementById("img-no-text").style.display="none";
+        document.getElementById("resultado").style.display="inline-block";
+    }
 })
 
 botonCopiar.addEventListener("click",()=>{
     resultado.removeAttribute("disabled");
     navigator.clipboard.writeText(resultado.value);
-    alert("texto copiado");
-} )
+})
+
