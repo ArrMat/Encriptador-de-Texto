@@ -35,10 +35,12 @@ botonEncriptar.addEventListener("click",()=>{
 
     if (resultado.value === "") {
         document.getElementById("resultado").style.display="none";
+        document.getElementById("boton-copiar").style.display="none";
         document.querySelector(".imagen").style.display="inline-block";
     } else {
         document.querySelector(".imagen").style.display="none";
         document.getElementById("resultado").style.display="inline-block";
+        document.getElementById("boton-copiar").style.display="inline-block";
     }
 });
 
@@ -47,10 +49,12 @@ botonDesencriptar.addEventListener("click",()=>{
 
     if (resultado.value === "") {
         document.getElementById("resultado").style.display="none";
+        document.getElementById("boton-copiar").style.display="none";
         document.querySelector(".imagen").style.display="inline-block";
     } else {
         document.querySelector(".imagen").style.display="none";
         document.getElementById("resultado").style.display="inline-block";
+        document.getElementById("boton-copiar").style.display="inline-block";
     }
 })
 

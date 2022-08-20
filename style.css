@@ -92,6 +92,7 @@ textarea, textarea:focus, textarea:active{
         }
     #boton-copiar {
         width: 80%;
+        display: none;
     }
 
 
